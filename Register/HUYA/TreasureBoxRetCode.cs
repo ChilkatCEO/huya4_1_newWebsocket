@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x02000051 RID: 81
+	public enum TreasureBoxRetCode
+	{
+		// Token: 0x04000357 RID: 855
+		RETCODE_SUBOVERTIMES = -4,
+		// Token: 0x04000358 RID: 856
+		RETCODE_UNKNOW,
+		// Token: 0x04000359 RID: 857
+		RETCODE_NOTEXIST,
+		// Token: 0x0400035A RID: 858
+		RETCODE_OVERTIMES,
+		// Token: 0x0400035B RID: 859
+		RETCODE_SUCESS,
+		// Token: 0x0400035C RID: 860
+		RETCODE_LASTTIMES
+	}
+}

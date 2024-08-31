@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x020000CE RID: 206
+	public enum LiveSharePlatform
+	{
+		// Token: 0x04000715 RID: 1813
+		LIVE_SHARE_WEIXIN_ZONE = 1,
+		// Token: 0x04000716 RID: 1814
+		LIVE_SHARE_WEIXIN_FRIEND,
+		// Token: 0x04000717 RID: 1815
+		LIVE_SHARE_SINA_WEIBO,
+		// Token: 0x04000718 RID: 1816
+		LIVE_SHARE_QQ,
+		// Token: 0x04000719 RID: 1817
+		LIVE_SHARE_QQZONE,
+		// Token: 0x0400071A RID: 1818
+		LIVE_SHARE_BAIDUTIEBA,
+		// Token: 0x0400071B RID: 1819
+		LIVE_SHARE_COPY_URL
+	}
+}

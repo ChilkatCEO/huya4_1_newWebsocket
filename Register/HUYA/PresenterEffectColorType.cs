@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x02000057 RID: 87
+	public enum PresenterEffectColorType
+	{
+		// Token: 0x0400038C RID: 908
+		PRESENTER_EFFECT_COLOR_NULL = -1,
+		// Token: 0x0400038D RID: 909
+		PRESENTER_EFFECT_COLOR_LV1,
+		// Token: 0x0400038E RID: 910
+		PRESENTER_EFFECT_COLOR_LV2,
+		// Token: 0x0400038F RID: 911
+		PRESENTER_EFFECT_COLOR_LV3,
+		// Token: 0x04000390 RID: 912
+		PRESENTER_EFFECT_COLOR_LV4
+	}
+}

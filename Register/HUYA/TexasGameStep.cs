@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x020000BE RID: 190
+	public enum TexasGameStep
+	{
+		// Token: 0x04000641 RID: 1601
+		TGS_INIT,
+		// Token: 0x04000642 RID: 1602
+		TGS_PREFLOP,
+		// Token: 0x04000643 RID: 1603
+		TGS_FLOP,
+		// Token: 0x04000644 RID: 1604
+		TGS_TURN,
+		// Token: 0x04000645 RID: 1605
+		TGS_RIVER,
+		// Token: 0x04000646 RID: 1606
+		TGS_SETTLE,
+		// Token: 0x04000647 RID: 1607
+		TGS_SHOWCARD,
+		// Token: 0x04000648 RID: 1608
+		TGS_OVER,
+		// Token: 0x04000649 RID: 1609
+		TGS_NODATA,
+		// Token: 0x0400064A RID: 1610
+		TGS_CHECK_COUNTDOWN = 10,
+		// Token: 0x0400064B RID: 1611
+		TGS_WAIT_SETTLE = 99,
+		// Token: 0x0400064C RID: 1612
+		TGS_ERROR,
+		// Token: 0x0400064D RID: 1613
+		TGS_LOCK,
+		// Token: 0x0400064E RID: 1614
+		TGS_COUNTDOWN,
+		// Token: 0x0400064F RID: 1615
+		TGS_COUNTDOWN_FINISH
+	}
+}

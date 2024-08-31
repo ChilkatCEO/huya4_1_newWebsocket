@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x02000055 RID: 85
+	public enum EffectType
+	{
+		// Token: 0x0400037E RID: 894
+		EFFECTTYPE_NULL,
+		// Token: 0x0400037F RID: 895
+		EFFECTTYPE_YJZQ,
+		// Token: 0x04000380 RID: 896
+		EFFECTTYPE_QTYH,
+		// Token: 0x04000381 RID: 897
+		EFFECTTYPE_XXXY,
+		// Token: 0x04000382 RID: 898
+		EFFECTTYPE_MAIN_LOW,
+		// Token: 0x04000383 RID: 899
+		EFFECTTYPE_MAIN_MID,
+		// Token: 0x04000384 RID: 900
+		EFFECTTYPE_MAIN_TOP,
+		// Token: 0x04000385 RID: 901
+		EFFECTTYPE_MAIN_BIGGIFT
+	}
+}

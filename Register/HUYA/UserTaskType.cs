@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x020000D6 RID: 214
+	public enum UserTaskType
+	{
+		// Token: 0x04000741 RID: 1857
+		USERTASKTYPE_NONE,
+		// Token: 0x04000742 RID: 1858
+		USERTASKTYPE_ONCE,
+		// Token: 0x04000743 RID: 1859
+		USERTASKTYPE_DAILY,
+		// Token: 0x04000744 RID: 1860
+		USERTASKTYPE_NOVICE,
+		// Token: 0x04000745 RID: 1861
+		PRESENTERTASKTYPE_DAILY = 10
+	}
+}

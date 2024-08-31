@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F70438F-9563-4F15-932B-BDC3E1B81D46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iHuya</RootNamespace>
+    <AssemblyName>HUYA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>图标.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>iHuya.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="ChilkatDotNet45, Version=9.5.0.95, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <HintPath>..\packages\chilkat-win32.9.5.0.95\lib\net45\ChilkatDotNet45.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="Huya.Login">
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Huya.Login.dll</HintPath>
+      <Aliases>huyalogin</Aliases>
+    </Reference>
+    <Reference Include="Huya.MessageBus, Version=2.15.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Huya.MessageBus.dll</HintPath>
+      <Aliases>huyamessagebus</Aliases>
+    </Reference>
+    <Reference Include="Huya.NetService, Version=3.1.1.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.NetService.dll</HintPath>
+      <Aliases>huyanetsvc</Aliases>
+    </Reference>
+    <Reference Include="Huya.Protocal, Version=3.1.1.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Huya.Protocal.dll</HintPath>
+      <Aliases>huyaproto</Aliases>
+    </Reference>
+    <Reference Include="Huya.WatchFrame, Version=3.5.4.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.WatchFrame.dll</HintPath>
+      <Aliases>huyawatchframe</Aliases>
+    </Reference>
+    <Reference Include="Huya.WatchFrame.InformationView, Version=2.15.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.WatchFrame.InformationView.dll</HintPath>
+      <Aliases>huyawatchframeinformationview</Aliases>
+    </Reference>
+    <Reference Include="Huya.WatchFrame.InteractiveView">
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.WatchFrame.InteractiveView.dll</HintPath>
+      <Aliases>huyawatchfamemsgv</Aliases>
+    </Reference>
+    <Reference Include="Huya.WatchFrame.PropertyView">
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.WatchFrame.PropertyView.dll</HintPath>
+      <Aliases>HuyawatchFramepropertyView</Aliases>
+    </Reference>
+    <Reference Include="Huya.WatchFrame.TreasureBox, Version=2.15.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\HuyaLive\HuyaClient\Net45\Local\Huya.WatchFrame.TreasureBox.dll</HintPath>
+      <Aliases>huyawatchframetreasurebox</Aliases>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LoginWrapper, Version=1.0.6857.19672, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HuyaZhiBo\HuyaClient\Net45\LoginWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net40\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartThreadPool, Version=2.2.4.0, Culture=neutral, PublicKeyToken=1126fe8b671e8a79, processorArchitecture=MSIL">
+      <HintPath>..\packages\SmartThreadPool.dll.2.2.4\lib\net40\SmartThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp.clone">
+      <HintPath>..\..\..\websocket-sharp-master\websocket-sharp.clone\bin\Debug\net45\websocket-sharp.clone.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARC4.cs" />
+    <Compile Include="Call.cs" />
+    <Compile Include="channel.cs" />
+    <Compile Include="Guest.cs" />
+    <Compile Include="Http.cs" />
+    <Compile Include="HUYA\ActiveEventInfo.cs" />
+    <Compile Include="HUYA\ActivityStatusType.cs" />
+    <Compile Include="HUYA\ActivityType.cs" />
+    <Compile Include="HUYA\AdvertStatus.cs" />
+    <Compile Include="HUYA\AppGetPackageWaterRspCode.cs" />
+    <Compile Include="HUYA\AttendeeCountRsp.cs" />
+    <Compile Include="HUYA\BannerItem.cs" />
+    <Compile Include="HUYA\BeginLiveNotice.cs" />
+    <Compile Include="HUYA\BonusType.cs" />
+    <Compile Include="HUYA\CardPackageUseType.cs" />
+    <Compile Include="HUYA\CfgChatErrCode.cs" />
+    <Compile Include="HUYA\CHANNELTYPE.cs" />
+    <Compile Include="HUYA\CheckRoomStatus.cs" />
+    <Compile Include="HUYA\CKRoomUserEnterReq.cs" />
+    <Compile Include="HUYA\ClickSearchUserReq.cs" />
+    <Compile Include="HUYA\Const.cs" />
+    <Compile Include="HUYA\CP_ERRORCODE.cs" />
+    <Compile Include="HUYA\CreateGameRspType.cs" />
+    <Compile Include="HUYA\CRPresenterInfo.cs" />
+    <Compile Include="HUYA\CWS_IDTYPE.cs" />
+    <Compile Include="HUYA\CWS_OperType.cs" />
+    <Compile Include="HUYA\DeliverProtocolType.cs" />
+    <Compile Include="HUYA\DeliverType.cs" />
+    <Compile Include="HUYA\EAccessType.cs" />
+    <Compile Include="HUYA\EAuditOpType.cs" />
+    <Compile Include="HUYA\EAuditorAction.cs" />
+    <Compile Include="HUYA\EAuditorUserType.cs" />
+    <Compile Include="HUYA\EAWordsType.cs" />
+    <Compile Include="HUYA\EBoxErrorCode.cs" />
+    <Compile Include="HUYA\EBuyType.cs" />
+    <Compile Include="HUYA\ECardExpiredType.cs" />
+    <Compile Include="HUYA\ECardItemDivideType.cs" />
+    <Compile Include="HUYA\ECdnPolicyLevel.cs" />
+    <Compile Include="HUYA\ECharaderGuess.cs" />
+    <Compile Include="HUYA\ECharaderStatus.cs" />
+    <Compile Include="HUYA\ECodecType.cs" />
+    <Compile Include="HUYA\ECompatibleFlag.cs" />
+    <Compile Include="HUYA\EDecorationAppType.cs" />
+    <Compile Include="HUYA\EDecorationViewType.cs" />
+    <Compile Include="HUYA\EFansTipsType.cs" />
+    <Compile Include="HUYA\EffectColorType.cs" />
+    <Compile Include="HUYA\EffectType.cs" />
+    <Compile Include="HUYA\EFilterCond.cs" />
+    <Compile Include="HUYA\EGender.cs" />
+    <Compile Include="HUYA\EHistoryType.cs" />
+    <Compile Include="HUYA\EInfoChangedType.cs" />
+    <Compile Include="HUYA\EInOutOfficial.cs" />
+    <Compile Include="HUYA\EInOutStorage.cs" />
+    <Compile Include="HUYA\EInvitationRspType.cs" />
+    <Compile Include="HUYA\EInvitePKType.cs" />
+    <Compile Include="HUYA\EIsPay.cs" />
+    <Compile Include="HUYA\EIsStorage.cs" />
+    <Compile Include="HUYA\EItemType.cs" />
+    <Compile Include="HUYA\ELinkMicErrCode.cs" />
+    <Compile Include="HUYA\ELinkMicSessionStatus.cs" />
+    <Compile Include="HUYA\ELinkMicStatus.cs" />
+    <Compile Include="HUYA\ELiveAppType.cs" />
+    <Compile Include="HUYA\ELiveCompatibleFlag.cs" />
+    <Compile Include="HUYA\ELiveProxyType.cs" />
+    <Compile Include="HUYA\ELiveSource.cs" />
+    <Compile Include="HUYA\ELiveSourceType.cs" />
+    <Compile Include="HUYA\EMatchErrCode.cs" />
+    <Compile Include="HUYA\EMatchGambleBuyType.cs" />
+    <Compile Include="HUYA\EMatchGambleErrCode.cs" />
+    <Compile Include="HUYA\EMatchGambleState.cs" />
+    <Compile Include="HUYA\EMatchState.cs" />
+    <Compile Include="HUYA\EMessageShowMode.cs" />
+    <Compile Include="HUYA\EMsgDataType.cs" />
+    <Compile Include="HUYA\EMsgTermType.cs" />
+    <Compile Include="HUYA\EMUploadLogDeliverType.cs" />
+    <Compile Include="HUYA\EMutedAction.cs" />
+    <Compile Include="HUYA\EMutedType.cs" />
+    <Compile Include="HUYA\EndGameType.cs" />
+    <Compile Include="HUYA\EndLiveNotice.cs" />
+    <Compile Include="HUYA\EnterChannelReq.cs" />
+    <Compile Include="HUYA\EnumAuthStats.cs" />
+    <Compile Include="HUYA\EOfficialId.cs" />
+    <Compile Include="HUYA\EOpenRtmpErrCode.cs" />
+    <Compile Include="HUYA\EOper.cs" />
+    <Compile Include="HUYA\EPayType.cs" />
+    <Compile Include="HUYA\EPhonePushType.cs" />
+    <Compile Include="HUYA\EPKGiftType.cs" />
+    <Compile Include="HUYA\EPopupErrCode.cs" />
+    <Compile Include="HUYA\EPresenterListModType.cs" />
+    <Compile Include="HUYA\ePresenterOperation.cs" />
+    <Compile Include="HUYA\EPresenterOpt.cs" />
+    <Compile Include="HUYA\EPushRange.cs" />
+    <Compile Include="HUYA\EPushSource.cs" />
+    <Compile Include="HUYA\EPushSwitch.cs" />
+    <Compile Include="HUYA\EPushtype.cs" />
+    <Compile Include="HUYA\ERaffleErrCode.cs" />
+    <Compile Include="HUYA\ERankType.cs" />
+    <Compile Include="HUYA\ERecommendVideoType.cs" />
+    <Compile Include="HUYA\ERoomAuditConfGroup.cs" />
+    <Compile Include="HUYA\ERoomAuditConfItem.cs" />
+    <Compile Include="HUYA\ErrorCode.cs" />
+    <Compile Include="HUYA\ESearchLiveState.cs" />
+    <Compile Include="HUYA\ESettingType.cs" />
+    <Compile Include="HUYA\ESetUserPropType.cs" />
+    <Compile Include="HUYA\ESourceType.cs" />
+    <Compile Include="HUYA\ESSAritcleType.cs" />
+    <Compile Include="HUYA\EStopPKReason.cs" />
+    <Compile Include="HUYA\EStreamLineType.cs" />
+    <Compile Include="HUYA\ETokenType.cs" />
+    <Compile Include="HUYA\EUEACTBUTTONSTATE.cs" />
+    <Compile Include="HUYA\EUEACTSTATE.cs" />
+    <Compile Include="HUYA\EUELIVESTATE.cs" />
+    <Compile Include="HUYA\EUPOrderType.cs" />
+    <Compile Include="HUYA\EUPSceneType.cs" />
+    <Compile Include="HUYA\EUPSubscibeAction.cs" />
+    <Compile Include="HUYA\EUPSubscibeAppType.cs" />
+    <Compile Include="HUYA\eUserOperation.cs" />
+    <Compile Include="HUYA\EVideoListType.cs" />
+    <Compile Include="HUYA\EVideoType.cs" />
+    <Compile Include="HUYA\EWebSocketCommandType.cs" />
+    <Compile Include="HUYA\EWebSocketPushMessageType.cs" />
+    <Compile Include="HUYA\EWebSocketPushProtocolType.cs" />
+    <Compile Include="HUYA\EWSDeRegisterFlag.cs" />
+    <Compile Include="HUYA\FromType.cs" />
+    <Compile Include="HUYA\GameBaseInfo.cs" />
+    <Compile Include="HUYA\GameLiveInfo.cs" />
+    <Compile Include="HUYA\GameLiveTag.cs" />
+    <Compile Include="HUYA\GameOverType.cs" />
+    <Compile Include="HUYA\GetCdnTokenReq.cs" />
+    <Compile Include="HUYA\GetCdnTokenRsp.cs" />
+    <Compile Include="HUYA\GetCurCheckRoomStatusReq.cs" />
+    <Compile Include="HUYA\GetDynamicConfigReq.cs" />
+    <Compile Include="HUYA\GetDynamicConfigRsp.cs" />
+    <Compile Include="HUYA\GetLinkMicPresenterInfoReq.cs" />
+    <Compile Include="HUYA\GetLinkMicPresenterInfoRsp.cs" />
+    <Compile Include="HUYA\GetLivingInfoByChannelReq.cs" />
+    <Compile Include="HUYA\GetLivingInfoByChannelRsp.cs" />
+    <Compile Include="HUYA\GetLivingInfoReq.cs" />
+    <Compile Include="HUYA\GetLivingInfoRsp.cs" />
+    <Compile Include="HUYA\GetSearchSuggestionByKeywordReq.cs" />
+    <Compile Include="HUYA\GetUserProfileByYYReq.cs" />
+    <Compile Include="HUYA\GetUserProfileReq.cs" />
+    <Compile Include="HUYA\GetUserProfileRsp.cs" />
+    <Compile Include="HUYA\GuardianRspCode.cs" />
+    <Compile Include="HUYA\HotFixScene.cs" />
+    <Compile Include="HUYA\HotFixType.cs" />
+    <Compile Include="HUYA\IllegalLevel.cs" />
+    <Compile Include="HUYA\InOutCashPoolType.cs" />
+    <Compile Include="HUYA\ItemEventType.cs" />
+    <Compile Include="HUYA\ItemType.cs" />
+    <Compile Include="HUYA\LinkMicStatusChangeNotice.cs" />
+    <Compile Include="HUYA\LiveAppUAEx.cs" />
+    <Compile Include="HUYA\LiveLaunchReq.cs" />
+    <Compile Include="HUYA\LiveLaunchRsp.cs" />
+    <Compile Include="HUYA\LiveListRecGameItem.cs" />
+    <Compile Include="HUYA\LiveProxyValue.cs" />
+    <Compile Include="HUYA\LiveSharePlatform.cs" />
+    <Compile Include="HUYA\LiveUserbase.cs" />
+    <Compile Include="HUYA\LMPresenterInfo.cs" />
+    <Compile Include="HUYA\LuckBagType.cs" />
+    <Compile Include="HUYA\LuckMoenyStats.cs" />
+    <Compile Include="HUYA\LuckMoneyType.cs" />
+    <Compile Include="HUYA\MActivityTargetType.cs" />
+    <Compile Include="HUYA\MActivityType.cs" />
+    <Compile Include="HUYA\MGetLiveListReq.cs" />
+    <Compile Include="HUYA\MGetLiveListRsp.cs" />
+    <Compile Include="HUYA\MicOperation.cs" />
+    <Compile Include="HUYA\MLinkMicAction.cs" />
+    <Compile Include="HUYA\MobileSearchByKeywordReq.cs" />
+    <Compile Include="HUYA\MobileSearchByKeywordRsp.cs" />
+    <Compile Include="HUYA\MobileSearchModule.cs" />
+    <Compile Include="HUYA\MPresenterInfo.cs" />
+    <Compile Include="HUYA\MPresenterType.cs" />
+    <Compile Include="HUYA\MSubTagInfo.cs" />
+    <Compile Include="HUYA\MTagInfo.cs" />
+    <Compile Include="HUYA\MultiStreamInfo.cs" />
+    <Compile Include="HUYA\MVideoLinkMicAction.cs" />
+    <Compile Include="HUYA\NobleLevel.cs" />
+    <Compile Include="HUYA\NobleOp.cs" />
+    <Compile Include="HUYA\NobleResult.cs" />
+    <Compile Include="HUYA\NobleStatus.cs" />
+    <Compile Include="HUYA\NobleType.cs" />
+    <Compile Include="HUYA\NoticeType.cs" />
+    <Compile Include="HUYA\OptimizationLevel.cs" />
+    <Compile Include="HUYA\PackageCashPoolType.cs" />
+    <Compile Include="HUYA\PaymentCode.cs" />
+    <Compile Include="HUYA\PayRespCode.cs" />
+    <Compile Include="HUYA\PKLevel.cs" />
+    <Compile Include="HUYA\PKResult.cs" />
+    <Compile Include="HUYA\PKStatus.cs" />
+    <Compile Include="HUYA\PlayerStatusType.cs" />
+    <Compile Include="HUYA\PresenterBase.cs" />
+    <Compile Include="HUYA\PresenterEffectColorType.cs" />
+    <Compile Include="HUYA\PresenterTaskBagStatType.cs" />
+    <Compile Include="HUYA\PrizeType.cs" />
+    <Compile Include="HUYA\RequestWhiteListType.cs" />
+    <Compile Include="HUYA\ResponseCode.cs" />
+    <Compile Include="HUYA\SecPackType.cs" />
+    <Compile Include="HUYA\SendItemDisplayInfoType.cs" />
+    <Compile Include="HUYA\SendItemPayPloy.cs" />
+    <Compile Include="HUYA\SeqType.cs" />
+    <Compile Include="HUYA\SortFlag.cs" />
+    <Compile Include="HUYA\SSNormalUserInfo.cs" />
+    <Compile Include="HUYA\SSPresenterInfo.cs" />
+    <Compile Include="HUYA\StreamInfo.cs" />
+    <Compile Include="HUYA\StreamSettingNotice.cs" />
+    <Compile Include="HUYA\SubscribeAction.cs" />
+    <Compile Include="HUYA\SubscriberType.cs" />
+    <Compile Include="HUYA\TeaseRetCode.cs" />
+    <Compile Include="HUYA\TemplateType.cs" />
+    <Compile Include="HUYA\TempletType.cs" />
+    <Compile Include="HUYA\TexasActionType.cs" />
+    <Compile Include="HUYA\TexasBeanType.cs" />
+    <Compile Include="HUYA\TexasCardNumber.cs" />
+    <Compile Include="HUYA\TexasCardType.cs" />
+    <Compile Include="HUYA\TexasDemoType.cs" />
+    <Compile Include="HUYA\TexasDeskModel.cs" />
+    <Compile Include="HUYA\TexasGameStep.cs" />
+    <Compile Include="HUYA\TexasHandCardsType.cs" />
+    <Compile Include="HUYA\TexasResponseType.cs" />
+    <Compile Include="HUYA\TransationRecordStat.cs" />
+    <Compile Include="HUYA\TreasureBoxRetCode.cs" />
+    <Compile Include="HUYA\UpcommingEventInfo.cs" />
+    <Compile Include="HUYA\UserBase.cs" />
+    <Compile Include="HUYA\UserChannelReq.cs" />
+    <Compile Include="HUYA\UserEventReq.cs" />
+    <Compile Include="HUYA\UserEventRsp.cs" />
+    <Compile Include="HUYA\UserHeartBeatReq.cs" />
+    <Compile Include="HUYA\UserId.cs" />
+    <Compile Include="HUYA\UserLocationType.cs" />
+    <Compile Include="HUYA\UserProfile.cs" />
+    <Compile Include="HUYA\UserRole.cs" />
+    <Compile Include="HUYA\UserTaskPrizeType.cs" />
+    <Compile Include="HUYA\UserTaskProgressMode.cs" />
+    <Compile Include="HUYA\UserTaskType.cs" />
+    <Compile Include="HUYA\VideoDefinition.cs" />
+    <Compile Include="HUYA\VideoInfo.cs" />
+    <Compile Include="HUYA\VipType.cs" />
+    <Compile Include="HUYA\VOD_TOKEN_TYPE.cs" />
+    <Compile Include="HUYA\WebSocketCommand.cs" />
+    <Compile Include="HUYA\WeekStarType.cs" />
+    <Compile Include="HUYA\WSPushMessage.cs" />
+    <Compile Include="HUYA\WSRegisterGroupReq.cs" />
+    <Compile Include="imagetool.cs" />
+    <Compile Include="PCLogin.cs" />
+    <Compile Include="ProtoTool\GetCdnTokenInfoEx.cs" />
+    <Compile Include="ProtoTool\OnReady.cs" />
+    <Compile Include="ProtoTool\UserChannelReq.cs" />
+    <Compile Include="ProtoTool\VideoGateWayPing.cs" />
+    <Compile Include="ProtoTool\WSRegisterGroup.cs" />
+    <Compile Include="ProtoTool\WSVerify.cs" />
+    <Compile Include="ProtoTool\WSVerifyCookieReq.cs" />
+    <Compile Include="RuoKuaiHttp.cs" />
+    <Compile Include="TcpClientWithTimeout.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genrsa.cs" />
+    <Compile Include="HStruct.cs" />
+    <Compile Include="Manage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoTool\ExchangeKey.cs" />
+    <Compile Include="ProtoTool\LOGINSEQ1.cs" />
+    <Compile Include="ProtoTool\LOGINSEQ2.cs" />
+    <Compile Include="ProtoTool\LOGINSEQ3.cs" />
+    <Compile Include="ProtoTool\ProtoBase.cs" />
+    <Compile Include="rsatool.cs" />
+    <Compile Include="S5Struct.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="User3.cs" />
+    <Compile Include="Wup.Jce\JceDecodeException.cs" />
+    <Compile Include="Wup.Jce\JceDisplayer.cs" />
+    <Compile Include="Wup.Jce\JceEncodeException.cs" />
+    <Compile Include="Wup.Jce\JceInputStream.cs" />
+    <Compile Include="Wup.Jce\JceOutputStream.cs" />
+    <Compile Include="Wup.Jce\JceStruct.cs" />
+    <Compile Include="Wup.Jce\JceStructType.cs" />
+    <Compile Include="Wup.Jce\JceUtil.cs" />
+    <Compile Include="Wup.Utility\Util.cs" />
+    <Compile Include="Wup\BasicClassTypeUtil.cs" />
+    <Compile Include="Wup\ByteConverter.cs" />
+    <Compile Include="Wup\Const.cs" />
+    <Compile Include="Wup\HexUtil.cs" />
+    <Compile Include="Wup\ObjectCreateException.cs" />
+    <Compile Include="Wup\QTrace.cs" />
+    <Compile Include="Wup\RequestPacket.cs" />
+    <Compile Include="Wup\TafUniPacket.cs" />
+    <Compile Include="Wup\UniAttribute.cs" />
+    <Compile Include="Wup\UniPacket.cs" />
+    <Compile Include="Wup\WupHelper.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="iHuya.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon.ico" />
+    <Content Include="ClearScriptV8-32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClearScriptV8-32.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClearScriptV8-64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClearScriptV8-64.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Licenses\clearscript-license.txt" />
+    <Content Include="Licenses\v8-license.txt" />
+    <Content Include="popme.ico" />
+    <Content Include="portal2.ico" />
+    <Content Include="图标.ico" />
+    <None Include="Resources\cookiesimple.txt" />
+    <None Include="Resources\webloginauth.txt" />
+    <None Include="Resources\webloginverify.txt" />
+    <None Include="Resources\webloginanti.txt" />
+    <Content Include="shortcut_icon.ico" />
+    <Content Include="v8-ia32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-ia32.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-x64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="v8-x64.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\core.js" />
+    <None Include="Resources\JS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.11.0\build\NUnit.props'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+if not exist "$(TargetDir)" md "$(TargetDir)"
+xcopy /s /y "$(SolutionDir)packages\ClearScript.V8.5.5.2\tools\native\x86\*.*" "$(TargetDir)"
+if not exist "$(TargetDir)" md "$(TargetDir)"
+xcopy /s /y "$(SolutionDir)packages\ClearScript.V8.5.5.2\tools\native\amd64\*.*" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x0200009C RID: 156
+	public enum IllegalLevel
+	{
+		// Token: 0x0400057B RID: 1403
+		ILLEGAL_OTHER,
+		// Token: 0x0400057C RID: 1404
+		ILLEGAL_PLUGIN,
+		// Token: 0x0400057D RID: 1405
+		ILLEGAL_CHEAT_AD,
+		// Token: 0x0400057E RID: 1406
+		ILLEGAL_SEXY,
+		// Token: 0x0400057F RID: 1407
+		ILLEGAL_COPYRIGHT,
+		// Token: 0x04000580 RID: 1408
+		ILLEGAL_CURSE,
+		// Token: 0x04000581 RID: 1409
+		ILLEGAL_VOICE
+	}
+}

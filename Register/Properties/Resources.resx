@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="core" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\core.js;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="JS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JS.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="TestJs" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="videodiymsg" xml:space="preserve">
+    <value>GET {hysuffix} HTTP/1.1
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,video/x-mng,image/png,image/jpeg,image/gif;q=0.2,*/*;q=0.1
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Accept-Encoding: gzip,deflate
+Accept-Language: en-us,en;q=0.5
+Host: {hyprefix}
+Cookie: {Cookie}
+User-agent: HYSDK(Windows, 20000308)</value>
+  </data>
+  <data name="VideoRequestMsg" xml:space="preserve">
+    <value>GET /huyalive{hysuffix} HTTP/1.1
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,video/x-mng,image/png,image/jpeg,image/gif;q=0.2,*/*;q=0.1
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Accept-Encoding: gzip,deflate
+Accept-Language: en-us,en;q=0.5
+Host: {hyprefix}
+Cookie: {Cookie}
+User-agent: HYSDK(Windows, 20000308)</value>
+  </data>
+  <data name="cookiesimple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cookiesimple.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="report1" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.pv","its":1543558252701,"dim":{"schema":"https"},"field":{},"exlog":{"extdesc":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}}]}</value>
+  </data>
+  <data name="report2" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.loadStatus","its":1543558462894,"dim":{"schema":"https","success":"1"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558462894,"dim":{"schema":"https","path":"huya-main-room","success":"1"},"field":{"value":16},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558462959,"dim":{"schema":"https","path":"doLaunch","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558462959,"dim":{"schema":"https","path":"doLaunch","success":"0"},"field":{"value":8671},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558462985,"dim":{"schema":"https","path":"getPropsList","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558462985,"dim":{"schema":"https","path":"getPropsList","success":"0"},"field":{"value":8692},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463004,"dim":{"schema":"https","path":"getLivingInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463005,"dim":{"schema":"https","path":"getLivingInfo","success":"0"},"field":{"value":8717},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.performance","its":1543558463045,"dim":{"schema":"https"},"field":{"dns":0,"tcp":0,"ttfb":425,"trans":111,"dom":198,"res":9077,"firstbyte":426,"fpt":537,"tti":735,"whiteScreenTime":426,"firstScreenTime":610,"readyTime":745,"loadTime":9828},"exlog":{"extdesc":"[{\"conEnd\":\"624.10\",\"conStart\":\"624.10\",\"deSize\":55,\"doEnd\":\"624.10\",\"doStart\":\"624.10\",\"dur\":\"535.70\",\"enSize\":55,\"fetStart\":\"624.10\",\"reqStart\":\"625.90\",\"respEnd\":\"1159.80\",\"respStart\":\"1159.00\",\"transSize\":613,\"name\":\"https://www.huya.com/cache1min.php?m=chatMessage&amp;tid=50870308&amp;sid=50870308\"},{\"conEnd\":\"0.00\",\"conStart\":\"0.00\",\"deSize\":0,\"doEnd\":\"0.00\",\"doStart\":\"0.00\",\"dur\":\"471.50\",\"enSize\":0,\"fetStart\":\"961.50\",\"reqStart\":\"0.00\",\"respEnd\":\"1433.00\",\"respStart\":\"0.00\",\"transSize\":0,\"name\":\"https://wup.huya.com/\"},{\"conEnd\":\"939.10\",\"conStart\":\"931.60\",\"deSize\":156,\"doEnd\":\"929.40\",\"doStart\":\"929.40\",\"dur\":\"447.00\",\"enSize\":156,\"fetStart\":\"929.40\",\"reqStart\":\"939.30\",\"respEnd\":\"1376.40\",\"respStart\":\"1375.70\",\"transSize\":590,\"name\":\"https://l.web.huya.com/index.php?m=HuyaWeb&amp;do=check&amp;callback=data\"}]"}},{"name":"fed.page.indexMess","its":1543558463065,"dim":{"schema":"https","path":"getCurWeekStarPropsIds","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463067,"dim":{"schema":"https","path":"getCurWeekStarPropsIds","success":"1"},"field":{"value":68},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.index","its":1543558463105,"dim":{"schema":"https","path":"userIn","success":"1"},"field":{"value":45},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463106,"dim":{"schema":"https","path":"GetNobleInfo","retcode":"1"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463106,"dim":{"schema":"https","path":"GetNobleInfo","success":"1"},"field":{"value":43},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463107,"dim":{"schema":"https","path":"getWebdbUserInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463107,"dim":{"schema":"https","path":"getWebdbUserInfo","success":"1"},"field":{"value":48},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463121,"dim":{"schema":"https","path":"OnUserEvent","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463122,"dim":{"schema":"https","path":"OnUserEvent","success":"1"},"field":{"value":59},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463142,"dim":{"schema":"https","path":"getGameInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463142,"dim":{"schema":"https","path":"getGameInfo","success":"1"},"field":{"value":32},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463181,"dim":{"schema":"https","path":"getLotteryPanel","retcode":"1"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463181,"dim":{"schema":"https","path":"getLotteryPanel","success":"1"},"field":{"value":66},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463186,"dim":{"schema":"https","path":"getOnTVPanel","retcode":"1"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463187,"dim":{"schema":"https","path":"getOnTVPanel","success":"1"},"field":{"value":74},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463190,"dim":{"schema":"https","path":"getQAUserPanel","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463190,"dim":{"schema":"https","path":"getQAUserPanel","success":"1"},"field":{"value":74},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463191,"dim":{"schema":"https","path":"getLiveAdInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463191,"dim":{"schema":"https","path":"getLiveAdInfo","success":"1"},"field":{"value":80},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463192,"dim":{"schema":"https","path":"getTreasureBoxInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463193,"dim":{"schema":"https","path":"getTreasureBoxInfo","success":"1"},"field":{"value":84},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463200,"dim":{"schema":"https","path":"GetCurCheckRoomStatus","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463200,"dim":{"schema":"https","path":"GetCurCheckRoomStatus","success":"1"},"field":{"value":84},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463204,"dim":{"schema":"https","path":"getAssistant","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463204,"dim":{"schema":"https","path":"getAssistant","success":"1"},"field":{"value":94},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463205,"dim":{"schema":"https","path":"getSupportCampInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463205,"dim":{"schema":"https","path":"getSupportCampInfo","success":"1"},"field":{"value":86},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463205,"dim":{"schema":"https","path":"getLinkMicPresenterListByUid","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463205,"dim":{"schema":"https","path":"getLinkMicPresenterListByUid","success":"1"},"field":{"value":87},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463206,"dim":{"schema":"https","path":"getFirstRechargePkgStatus","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463206,"dim":{"schema":"https","path":"getFirstRechargePkgStatus","success":"1"},"field":{"value":98},"exlog":{"extdesc":"network=0||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463259,"dim":{"schema":"https","path":"queryTreasure","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463259,"dim":{"schema":"https","path":"queryTreasure","success":"1"},"field":{"value":83},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463291,"dim":{"schema":"https","path":"getUserSetting","retcode":"1"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463291,"dim":{"schema":"https","path":"getUserSetting","success":"1"},"field":{"value":72},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463432,"dim":{"schema":"https","path":"getPresenterLevelBase","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463433,"dim":{"schema":"https","path":"getPresenterLevelBase","success":"1"},"field":{"value":103},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463478,"dim":{"schema":"https","path":"queryBadgeInfoList","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463478,"dim":{"schema":"https","path":"queryBadgeInfoList","success":"1"},"field":{"value":109},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463479,"dim":{"schema":"https","path":"getBadgeItem","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463480,"dim":{"schema":"https","path":"getBadgeItem","success":"1"},"field":{"value":109},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463564,"dim":{"schema":"https","path":"getBadgeConfigInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463564,"dim":{"schema":"https","path":"getBadgeConfigInfo","success":"1"},"field":{"value":126},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463568,"dim":{"schema":"https","path":"getScreenSkin","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.indexMess","its":1543558463589,"dim":{"schema":"https","path":"getAuditorRole","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558463589,"dim":{"schema":"https","path":"getAuditorRole","success":"1"},"field":{"value":113},"exlog":{"extdesc":"network=322||sdkAnalysis=692.00||sdkDuration=4.00"}},{"name":"fed.page.indexMess","its":1543558463661,"dim":{"schema":"https","path":"getUserLevelInfo","retcode":"2"},"field":{},"exlog":{"extdesc":""}},{"name":"fed.page.indexMess","its":1543558464005,"dim":{"schema":"https","path":"isPugcRoom","retcode":"2"},"field":{},"exlog":{"extdesc":""}}]}</value>
+  </data>
+  <data name="report3" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.index","its":1543558274840,"dim":{"schema":"https","path":"isPugcRoom","success":"0"},"field":{"value":5783},"exlog":{"extdesc":"network=229||sdkAnalysis=901.70||sdkDuration=2.30"}}]}</value>
+  </data>
+  <data name="report4" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.indexMess","its":1543558281833,"dim":{"schema":"https","path":"getActivityMsg","retcode":"2"},"field":{},"exlog":{"extdesc":""}}]}</value>
+  </data>
+  <data name="report5" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main-room","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"AppCache","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"DNS","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"TCP","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"Request","success":"1"},"field":{"value":101},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"Respone","success":"1"},"field":{"value":73},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"DomContentLoad","success":"1"},"field":{"value":215},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"PlayerLoad","success":"1"},"field":{"value":148},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"VideoLoad","success":"1"},"field":{"value":159},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"fetchStart-responseEnd","success":"1"},"field":{"value":175},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"connectStart-responseEnd","success":"1"},"field":{"value":175},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"connectStart-playerLoadStart","success":"1"},"field":{"value":291},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"connectStart-videoLoadEnd","success":"1"},"field":{"value":598},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"playerLoadStart-videoLoadEnd","success":"1"},"field":{"value":307},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"domLoading-playerLoadStart","success":"1"},"field":{"value":158},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"playerInitBefore-playerInitAfter","success":"1"},"field":{"value":31},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"whiteScreenTime","success":"1"},"field":{"value":102},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"firstScreenTime","success":"1"},"field":{"value":291},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558288663,"dim":{"schema":"room-flv","path":"readyTime","success":"1"},"field":{"value":358},"exlog":{"extdesc":""}}]}</value>
+  </data>
+  <data name="report6" xml:space="preserve">
+    <value>{"ua":"web&amp;huya-main-room","uid":"{UID}","sguid":"{SGUID}","m":[{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"AppCache","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"DNS","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"TCP","success":"1"},"field":{"value":0},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"Request","success":"1"},"field":{"value":101},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"Respone","success":"1"},"field":{"value":73},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"DomContentLoad","success":"1"},"field":{"value":215},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"PlayerLoad","success":"1"},"field":{"value":148},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"VideoLoad","success":"1"},"field":{"value":159},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"fetchStart-responseEnd","success":"1"},"field":{"value":175},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"connectStart-responseEnd","success":"1"},"field":{"value":175},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"connectStart-playerLoadStart","success":"1"},"field":{"value":291},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"connectStart-videoLoadEnd","success":"1"},"field":{"value":598},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"playerLoadStart-videoLoadEnd","success":"1"},"field":{"value":307},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"domLoading-playerLoadStart","success":"1"},"field":{"value":158},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"playerInitBefore-playerInitAfter","success":"1"},"field":{"value":31},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"whiteScreenTime","success":"1"},"field":{"value":102},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"firstScreenTime","success":"1"},"field":{"value":291},"exlog":{"extdesc":""}},{"name":"fed.page.index","its":1543558297221,"dim":{"schema":"room-normal","path":"readyTime","success":"1"},"field":{"value":358},"exlog":{"extdesc":""}}]}</value>
+  </data>
+  <data name="VideoRequestNew" xml:space="preserve">
+    <value>GET {hysuffix}&amp;u={UFF}&amp;t=100&amp;sv={SVFLAG} HTTP/1.1
+Host: {hyprefix}
+User-Agent: VLC/2.2.4 LibVLC/2.2.4
+Range: bytes=0-
+Connection: close
+Icy-MetaData: 1
+Cookie: {Cookie}</value>
+    <comment>GET /huyalive/57561808-2695377648-11576558848529399808-2000034680-10057-A-0-1.flv?wsSecret=b5cd7c0bc58a1b31a2a0f1d1a0307908&amp;wsTime=5bff7c83&amp;ratio=2000&amp;codec=264 HTTP/1.1
+Host: aldirect.flv.huya.com
+User-Agent: VLC/2.2.4 LibVLC/2.2.4
+Range: bytes=0-
+Connection: close
+Icy-MetaData: 1</comment>
+  </data>
+  <data name="VideoRequestNew2" xml:space="preserve">
+    <value>GET {hysuffix} HTTP/1.1
+Host: {hyprefix}
+User-Agent: VLC/2.2.4 LibVLC/2.2.4
+Range: bytes=0-
+Connection: close
+Icy-MetaData: 1
+Cookie: {Cookie}</value>
+  </data>
+  <data name="imageflag" xml:space="preserve">
+    <value>data:image/png</value>
+  </data>
+  <data name="webloginauth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webloginauth.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="weblogindescpre" xml:space="preserve">
+    <value>"description":"</value>
+  </data>
+  <data name="weblogindescsuff" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="webloginimgpre" xml:space="preserve">
+    <value>data:image/png;base64,</value>
+  </data>
+  <data name="webloginimgsuff" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="webloginsesspre" xml:space="preserve">
+    <value>"sessionData":"</value>
+  </data>
+  <data name="webloginsesssuff" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="webloginsuccess" xml:space="preserve">
+    <value>"returnCode":0</value>
+  </data>
+  <data name="webloginuidpre" xml:space="preserve">
+    <value>"uid":</value>
+  </data>
+  <data name="webloginuidsuff" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="webloginverify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webloginverify.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="webloginanti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webloginanti.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="webloginantiflag" xml:space="preserve">
+    <value>"returnCode":10030</value>
+  </data>
+  <data name="webloginselectpre" xml:space="preserve">
+    <value>"selectTitle":"</value>
+  </data>
+  <data name="webloginselectsuff" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="VideoRequestWeb" xml:space="preserve">
+    <value>GET {hysuffix} HTTP/1.1
+Host: {hyprefix}
+Connection: keep-alive
+User-Agent: {USERAGENT}
+Cookie: </value>
+    <comment>GET {hysuffix}&amp;u={UFF}&amp;t=0&amp;sv={SVFLAG} HTTP/1.1
+Host: {hyprefix}
+Connection: keep-alive
+Origin: http://www.huya.com
+User-Agent: {USERAGENT}
+Accept: */*
+Referer: http://www.huya.com/{roomid}
+Accept-Encoding: gzip
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: {Cookie}</comment>
+  </data>
+  <data name="weblogincheckpre" xml:space="preserve">
+    <value>"userNick":"</value>
+  </data>
+  <data name="webloginchecksuff" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="metricHuya001" xml:space="preserve">
+    <value>{"ua":"wxapp&amp;iosliveroom_video","uid":{UID},"sguid":"{USERMD5}","m":[{"name":"fed.page.wxapp_video","its":{TIMERPICK},"dim":{"path":"liveroom_video","useCache":"1","networkType":"wifi","platform":"ios","moblieType":"iPhone X (GSM+CDMA)&lt;iPhone10,3&gt;","wxVersion":"7.0.2","wxsdkVersion":"2.5.0","systemVersion":"iOS 12.1"},"field":{"requestTime":0,"videoLoadTime":{VIDEOLOADTIMING}},"exlog":{"extdesc":""}}]}</value>
+  </data>
+  <data name="webUserAgent" xml:space="preserve">
+    <value>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60
+Opera/8.0 (Windows NT 5.1; U; en)
+Mozilla/5.0 (Windows NT 5.1; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.50
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.50
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0
+Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36
+Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER) 
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E; LBBROWSER)"
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 SE 2.X MetaSr 1.0
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; SE 2.X MetaSr 1.0)
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.3.4000 Chrome/30.0.1599.101 Safari/537.36
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.3214.0 Safari/537.36
+UCWEB7.0.2.37/28/999
+NOKIA5700/ UCWEB7.0.2.37/28/999
+Openwave/ UCWEB7.0.2.37/28/999
+Mozilla/4.0 (compatible; MSIE 6.0; ) Opera/UCWEB7.0.2.37/28/999
+Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5
+Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5
+Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; zh-cn) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5
+Mozilla/5.0 (iPad; U; CPU OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5
+Mozilla/5.0 (Linux; U; Android 2.2.1; zh-cn; HTC_Wildfire_A3333 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+Opera/9.80 (Android 2.3.4; Linux; Opera Mobi/build-1107180945; U; en-GB) Presto/2.8.149 Version/11.10
+Mozilla/5.0 (Linux; U; Android 3.0; en-us; Xoom Build/HRI39) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
+Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.337 Mobile Safari/534.1+
+Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.0; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/233.70 Safari/534.6 TouchPad/1.0
+Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/20.0.019; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.18124
+Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Titan)
+UCWEB7.0.2.37/28/999
+NOKIA5700/ UCWEB7.0.2.37/28/999
+Openwave/ UCWEB7.0.2.37/28/999
+Mozilla/4.0 (compatible; MSIE 6.0; ) Opera/UCWEB7.0.2.37/28/999</value>
+  </data>
+  <data name="WXAPP_Login" xml:space="preserve">
+    <value>{"appId":"5133","uri":30001,"lcid":2052,"version":"1.0","context":"1","data":{"userName":"{myuser}","password":"{mypassword}","bizAppids":["5133"],"deviceInfo":{"terminalType":2,"deviceId":"{myguid}"},"protoInfo":{"appSign":"329027834cda5ea5af099693cf4904e2","appVer":"1.0"}}}</value>
+    <comment>5133</comment>
+  </data>
+  <data name="printText" xml:space="preserve">
+    <value>{ "version": "1.0","terminal": "pc","deviceinfo": {"ProcessorId":"BFEBFBFF000906E{NONE1}","CPU_des":"Intel64 Family 6 Model {NONE2} Stepping 13","CPU_name":"Intel(R) Core(TM) i7-{NONE3}K CPU @ 3.60GHz","System_name":"{NONE4}","Board_product":"PRIME Z390-P","Video_product":"","Network_product":"WAN Miniport (IP)","MACAddress":"EA:A2:20:52:41:{NONE5}","User_name":"{NONE4}","OsVersion":"6.2.9200","DiskInfo":"C-total:102410.{NONE2}-free:36591.{NONE2};","cdid":"{NONE6}","sdid":"{sdid}"}}</value>
+  </data>
+</root>

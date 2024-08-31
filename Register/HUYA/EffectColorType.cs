@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x02000056 RID: 86
+	public enum EffectColorType
+	{
+		// Token: 0x04000387 RID: 903
+		EFFECTCOLORTYPE_GREEN,
+		// Token: 0x04000388 RID: 904
+		EFFECTCOLORTYPE_BLUE,
+		// Token: 0x04000389 RID: 905
+		EFFECTCOLORTYPE_RED,
+		// Token: 0x0400038A RID: 906
+		EFFECTCOLORTYPE_GOLD
+	}
+}

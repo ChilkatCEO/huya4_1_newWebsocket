@@ -1,0 +1,1 @@
+{"uri":"40001","version":"2.2","context":"WB-{SMALL}-{BIG}-","appId":"5002","lcid":"2052","byPass":"3","sdid":"38968123","requestId":"40556437","data":{"strategy":"4","uid":"{UID}","authcode":"{AUTHCODE}","sessionData":"{SESSIONDATA}","remember":"1"}}

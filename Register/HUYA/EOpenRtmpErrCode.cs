@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace HUYA
+{
+	// Token: 0x020000CD RID: 205
+	public enum EOpenRtmpErrCode
+	{
+		// Token: 0x0400070D RID: 1805
+		INVALID_KEY = 100000,
+		// Token: 0x0400070E RID: 1806
+		PRESENTER_AUTH_FAILED,
+		// Token: 0x0400070F RID: 1807
+		PRESENTER_LIVING,
+		// Token: 0x04000710 RID: 1808
+		VERIFY_FAILED,
+		// Token: 0x04000711 RID: 1809
+		SERVER_ERROR = 100009,
+		// Token: 0x04000712 RID: 1810
+		RELYON_SERVER_ERROR,
+		// Token: 0x04000713 RID: 1811
+		NO_RTMP_ADDR
+	}
+}
